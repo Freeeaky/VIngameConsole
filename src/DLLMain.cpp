@@ -22,8 +22,8 @@ void ThreadInit()
 		if (GetModuleHandle("D3D11.dll") != NULL)
 			if (VIngameConsole::HookD3D11(hGameWindow)) break;
 
-		//if (GetModuleHandle("D3D9.dll") != NULL)
-		//	if (VIngameConsole::HookD3D9()) break;
+		if (GetModuleHandle("D3D9.dll") != NULL)
+			if (VIngameConsole::HookD3D9(hGameWindow)) break;
 
 		Sleep(200);
 	}

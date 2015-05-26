@@ -27,6 +27,12 @@
     <Filter Include="Header\D3D11">
       <UniqueIdentifier>{793ae0af-1b46-4780-8b87-3f095833b146}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\D3D9">
+      <UniqueIdentifier>{3b4bba83-37dc-43f0-bcd0-ceb6b8c450fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\D3D9">
+      <UniqueIdentifier>{8a39cdea-aa83-4448-813c-45ad671821f8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\DLLMain.cpp">
@@ -140,6 +146,9 @@
     <ClCompile Include="src\D3D11\Renderer11.cpp">
       <Filter>Source\D3D11</Filter>
     </ClCompile>
+    <ClCompile Include="src\D3D9\Hook9.cpp">
+      <Filter>Source\D3D9</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Includes.h">
@@ -162,6 +171,9 @@
     </ClInclude>
     <ClInclude Include="src\D3D11\Renderer11.h">
       <Filter>Header\D3D11</Filter>
+    </ClInclude>
+    <ClInclude Include="src\D3D9\Includes9.h">
+      <Filter>Header\D3D9</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

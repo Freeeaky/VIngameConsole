@@ -74,6 +74,7 @@
     <ClCompile Include="src\D3D11\FW1FontWrapper\src\FW1Precompiled.cpp" />
     <ClCompile Include="src\D3D11\Hook11.cpp" />
     <ClCompile Include="src\D3D11\Renderer11.cpp" />
+    <ClCompile Include="src\D3D9\Hook9.cpp" />
     <ClCompile Include="src\DLLMain.cpp" />
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\Memory\GameMemory.cpp" />
@@ -88,6 +89,7 @@
   <ItemGroup>
     <ClInclude Include="src\D3D11\Includes11.h" />
     <ClInclude Include="src\D3D11\Renderer11.h" />
+    <ClInclude Include="src\D3D9\Includes9.h" />
     <ClInclude Include="src\Includes.h" />
     <ClInclude Include="src\IRenderer.h" />
     <ClInclude Include="src\Memory\GameMemory.h" />

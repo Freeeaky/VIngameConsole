@@ -1,5 +1,6 @@
 // =================================================================================
-// Includes 
+// Includes
+// Thanks http://www.unknowncheats.me/forum/d3d-tutorials-and-source/88369-universal-d3d11-hook.html
 // =================================================================================
 #include "Includes.h"
 #include "Memory/Memory.h"
@@ -102,13 +103,12 @@ bool VIngameConsole::HookD3D11(HWND hGameWindow)
 		&pD3D11_Context)
 	))
 	{
-		MessageBox(hGameWindow, "Failed to create directX device and swapchain!", "uBoos?", MB_ICONERROR);
+		MessageBox(hGameWindow, "Failed to create DirectX 11 Device and Swapchain!", "VIngameConsole", MB_ICONERROR);
 		return false;
 	}
 
 	// Swapchain VTable
-	DWORD64* pD3D11_SwapChainVTable = NULL;
-	pD3D11_SwapChainVTable = (DWORD64*)pSwapChain;
+	DWORD64* pD3D11_SwapChainVTable = (DWORD64*)pSwapChain;
 	pD3D11_SwapChainVTable = (DWORD64*)pD3D11_SwapChainVTable[0];
 
 	// Hook
