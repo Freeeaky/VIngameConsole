@@ -11,7 +11,6 @@ char* GameMemory::Version = NULL;
 HMODULE GameMemory::GameModule = NULL;
 DWORD64 GameMemory::Base = NULL;
 DWORD64 GameMemory::Size = NULL;
-bool GameMemory::ScriptEngineInitialized = false;
 
 // =================================================================================
 // Init
@@ -34,9 +33,6 @@ void GameMemory::Init()
 	// Size
 	Size = Memory::GetModuleSize(GameModule);
 	//printf("[GameMemory] Game Size: %p\n", Size);
-
-	// Content
-	ScriptEngineInitialized = false;
 
 	// Version
 	FetchVersion();

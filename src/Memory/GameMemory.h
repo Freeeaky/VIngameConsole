@@ -41,9 +41,4 @@ namespace GameMemory
 	{
 		return (T) At(dwOffset);
 	}
-
-	/*
-	 * Content
-	 */
-	extern bool ScriptEngineInitialized;
 }
