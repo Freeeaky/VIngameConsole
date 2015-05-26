@@ -1,10 +1,7 @@
 // =================================================================================
-// Ingame Console 
+// D3D11 Renderer
 // =================================================================================
-namespace VIngameConsole
+class D3D11Renderer : public IRenderer
 {
-	bool HookD3D11(HWND hGameWindow);
-	bool HookD3D9(HWND hGameWindow);
 
-	void Render();
-}
+};

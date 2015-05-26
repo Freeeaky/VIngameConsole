@@ -145,5 +145,8 @@
     <ClInclude Include="src\VIngameConsole.h">
       <Filter>Header</Filter>
     </ClInclude>
+    <ClInclude Include="src\IRenderer.h">
+      <Filter>Header</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

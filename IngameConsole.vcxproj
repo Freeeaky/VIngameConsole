@@ -85,6 +85,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Includes.h" />
+    <ClInclude Include="src\IRenderer.h" />
     <ClInclude Include="src\Memory\GameMemory.h" />
     <ClInclude Include="src\Memory\Memory.h" />
     <ClInclude Include="src\VIngameConsole.h" />
