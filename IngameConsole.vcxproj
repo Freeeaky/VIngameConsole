@@ -47,6 +47,31 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\D3D11\FW1FontWrapper\src\CFW1ColorRGBA.cpp" />
+    <ClCompile Include="src\D3D11\FW1FontWrapper\src\CFW1ColorRGBAInterface.cpp" />
+    <ClCompile Include="src\D3D11\FW1FontWrapper\src\CFW1DWriteRenderTarget.cpp" />
+    <ClCompile Include="src\D3D11\FW1FontWrapper\src\CFW1DWriteRenderTargetInterface.cpp" />
+    <ClCompile Include="src\D3D11\FW1FontWrapper\src\CFW1Factory.cpp" />
+    <ClCompile Include="src\D3D11\FW1FontWrapper\src\CFW1FactoryInterface.cpp" />
+    <ClCompile Include="src\D3D11\FW1FontWrapper\src\CFW1FontWrapper.cpp" />
+    <ClCompile Include="src\D3D11\FW1FontWrapper\src\CFW1FontWrapperInterface.cpp" />
+    <ClCompile Include="src\D3D11\FW1FontWrapper\src\CFW1GlyphAtlas.cpp" />
+    <ClCompile Include="src\D3D11\FW1FontWrapper\src\CFW1GlyphAtlasInterface.cpp" />
+    <ClCompile Include="src\D3D11\FW1FontWrapper\src\CFW1GlyphProvider.cpp" />
+    <ClCompile Include="src\D3D11\FW1FontWrapper\src\CFW1GlyphProviderInterface.cpp" />
+    <ClCompile Include="src\D3D11\FW1FontWrapper\src\CFW1GlyphRenderStates.cpp" />
+    <ClCompile Include="src\D3D11\FW1FontWrapper\src\CFW1GlyphRenderStatesInterface.cpp" />
+    <ClCompile Include="src\D3D11\FW1FontWrapper\src\CFW1GlyphSheet.cpp" />
+    <ClCompile Include="src\D3D11\FW1FontWrapper\src\CFW1GlyphSheetInterface.cpp" />
+    <ClCompile Include="src\D3D11\FW1FontWrapper\src\CFW1GlyphVertexDrawer.cpp" />
+    <ClCompile Include="src\D3D11\FW1FontWrapper\src\CFW1GlyphVertexDrawerInterface.cpp" />
+    <ClCompile Include="src\D3D11\FW1FontWrapper\src\CFW1StateSaver.cpp" />
+    <ClCompile Include="src\D3D11\FW1FontWrapper\src\CFW1TextGeometry.cpp" />
+    <ClCompile Include="src\D3D11\FW1FontWrapper\src\CFW1TextGeometryInterface.cpp" />
+    <ClCompile Include="src\D3D11\FW1FontWrapper\src\CFW1TextRenderer.cpp" />
+    <ClCompile Include="src\D3D11\FW1FontWrapper\src\CFW1TextRendererInterface.cpp" />
+    <ClCompile Include="src\D3D11\FW1FontWrapper\src\FW1FontWrapper.cpp" />
+    <ClCompile Include="src\D3D11\FW1FontWrapper\src\FW1Precompiled.cpp" />
     <ClCompile Include="src\D3D11\Hook.cpp" />
     <ClCompile Include="src\DLLMain.cpp" />
     <ClCompile Include="src\Memory\GameMemory.cpp" />

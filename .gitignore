@@ -1,3 +1,5 @@
 x64/
 build/VIngameConsole.pdb
 build/VIngameConsole.asi
+build/VIngameConsole.exp
+build/VIngameConsole.lib
