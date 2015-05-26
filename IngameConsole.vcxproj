@@ -72,8 +72,10 @@
     <ClCompile Include="src\D3D11\FW1FontWrapper\src\CFW1TextRendererInterface.cpp" />
     <ClCompile Include="src\D3D11\FW1FontWrapper\src\FW1FontWrapper.cpp" />
     <ClCompile Include="src\D3D11\FW1FontWrapper\src\FW1Precompiled.cpp" />
-    <ClCompile Include="src\D3D11\Hook.cpp" />
+    <ClCompile Include="src\D3D11\Hook11.cpp" />
+    <ClCompile Include="src\D3D11\Renderer11.cpp" />
     <ClCompile Include="src\DLLMain.cpp" />
+    <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\Memory\GameMemory.cpp" />
     <ClCompile Include="src\Memory\Hooking.cpp" />
     <ClCompile Include="src\Memory\Memory.cpp" />
@@ -84,6 +86,8 @@
     <ClCompile Include="src\Memory\minhook\src\trampoline.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\D3D11\Includes11.h" />
+    <ClInclude Include="src\D3D11\Renderer11.h" />
     <ClInclude Include="src\Includes.h" />
     <ClInclude Include="src\IRenderer.h" />
     <ClInclude Include="src\Memory\GameMemory.h" />

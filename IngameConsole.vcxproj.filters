@@ -24,6 +24,9 @@
     <Filter Include="Source\D3D11\FW1FontWrapper">
       <UniqueIdentifier>{41690348-1c61-47c9-9490-02c4b6dcc57e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header\D3D11">
+      <UniqueIdentifier>{793ae0af-1b46-4780-8b87-3f095833b146}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\DLLMain.cpp">
@@ -52,9 +55,6 @@
     </ClCompile>
     <ClCompile Include="src\Memory\Memory.cpp">
       <Filter>Source\Memory</Filter>
-    </ClCompile>
-    <ClCompile Include="src\D3D11\Hook.cpp">
-      <Filter>Source\D3D11</Filter>
     </ClCompile>
     <ClCompile Include="src\D3D11\FW1FontWrapper\src\CFW1ColorRGBA.cpp">
       <Filter>Source\D3D11\FW1FontWrapper</Filter>
@@ -131,6 +131,15 @@
     <ClCompile Include="src\D3D11\FW1FontWrapper\src\FW1Precompiled.cpp">
       <Filter>Source\D3D11\FW1FontWrapper</Filter>
     </ClCompile>
+    <ClCompile Include="src\Main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\D3D11\Hook11.cpp">
+      <Filter>Source\D3D11</Filter>
+    </ClCompile>
+    <ClCompile Include="src\D3D11\Renderer11.cpp">
+      <Filter>Source\D3D11</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Includes.h">
@@ -147,6 +156,12 @@
     </ClInclude>
     <ClInclude Include="src\IRenderer.h">
       <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\D3D11\Includes11.h">
+      <Filter>Header\D3D11</Filter>
+    </ClInclude>
+    <ClInclude Include="src\D3D11\Renderer11.h">
+      <Filter>Header\D3D11</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

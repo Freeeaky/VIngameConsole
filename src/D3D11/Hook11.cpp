@@ -4,9 +4,7 @@
 #include "Includes.h"
 #include "Memory/Memory.h"
 #include "VIngameConsole.h"
-#include "thirdparty/DirectX/Include/d3d11.h"
-#include "FW1FontWrapper/src/FW1FontWrapper.h"
-#include "IRenderer.h"
+#include "Includes11.h"
 
 // =================================================================================
 // Import: D3D11CreateDeviceAndSwapChain
@@ -41,12 +39,30 @@ D3D11Present_t pD3D11_Present = NULL;
 // =================================================================================
 HRESULT __stdcall D3D11_Present_Hook(IDXGISwapChain* pSwapChain, UINT SyncInterval, UINT Flags)
 {
+	// Setup Renderer
+	if (g_pRenderer == NULL)
+	{
+		// Context
+		pSwapChain->GetDevice(__uuidof(pD3D11_Device), (void**)&pD3D11_Device);
+		pD3D11_Device->GetImmediateContext(&pD3D11_Context);
+
+		// Setup Data
+		D3D11Renderer_SetupData* pSetupData = new D3D11Renderer_SetupData();
+		pSetupData->pContext = pD3D11_Context;
+		pSetupData->pDevice = pD3D11_Device;
+
+		// Setup
+		g_pRenderer = new D3D11Renderer();
+		g_pRenderer->Setup((void*)pSetupData);
+	}
+
 	// Render
 	VIngameConsole::Render();
 
 	// Done
 	return pD3D11_Present(pSwapChain, SyncInterval, Flags);
 }
+
 
 // =================================================================================
 // Hook 
