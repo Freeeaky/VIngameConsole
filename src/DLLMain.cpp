@@ -4,26 +4,33 @@
 #include "Includes.h"
 #include "Memory/Memory.h"
 #include "VIngameConsole.h"
+#include "UTIL/UTIL.h"
 
 // =================================================================================
 // Init (Thread)
 // =================================================================================
 void ThreadInit()
 {
+	UTIL::Attach_Console(true, 0, 0);
 	Memory::Init();
 
-	while (true)
+	bool bD3D9 = false;
+	bool bD3D11 = false;
+
+	while (!bD3D11)
 	{
 		// Game Window
-		// Maybe find a better way?
+		// TODO: Change this
 		HWND hGameWindow = GetForegroundWindow();
 
 		// D3D11
-		if (GetModuleHandle("D3D11.dll") != NULL)
-			if (VIngameConsole::HookD3D11(hGameWindow)) break;
+		if (GetModuleHandle("D3D11.dll") != NULL && !bD3D11)
+			bD3D11 = VIngameConsole::HookD3D11(hGameWindow);
 
-		if (GetModuleHandle("D3D9.dll") != NULL)
-			if (VIngameConsole::HookD3D9(hGameWindow)) break;
+		/*if (GetModuleHandle("D3D9.dll") != NULL && !bD3D9)
+		{
+			bD3D9 = VIngameConsole::HookD3D9(hGameWindow);
+		}*/
 
 		Sleep(200);
 	}

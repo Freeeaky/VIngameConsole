@@ -32,6 +32,7 @@ bool Memory::HookFunction(DWORD64 pAddress, void* pDetour, void** ppOriginal)
 	if (iResult != MH_OK)
 	{
 		printf("[Memory::HookFunction] MH_CreateHook failed: %p [Error %i]\n", pAddress, iResult);
+		MessageBox(0, "CreateHook fail", "Fail", 0);
 		return false;
 	}
 
@@ -40,6 +41,7 @@ bool Memory::HookFunction(DWORD64 pAddress, void* pDetour, void** ppOriginal)
 	if (iResult != MH_OK)
 	{
 		printf("[Memory::HookFunction] MH_EnableHook failed: %p [Error %i]\n", pAddress, iResult);
+		MessageBox(0, "EnableHook fail", "Fail", 0);
 		return false;
 	}
 
